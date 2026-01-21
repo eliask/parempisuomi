@@ -1,0 +1,552 @@
+/* CSS Variables - Light mode defaults */
+:root {
+    --bg: #fafafa;
+    --text: #1a1a1a;
+    --text-muted: #666;
+    --text-faint: #999;
+    --border: #ddd;
+    --border-strong: #ccc;
+    --link: #0066cc;
+
+    /* Surfaces */
+    --surface: #fff;
+    --surface-alt: #f5f5f5;
+
+    /* Semantic colors */
+    --accent: #0066cc;
+    --accent-bg: #e6f7ff;
+
+    --problem: #c62828;
+    --problem-bg: #ffebee;
+
+    --solution: #2e7d32;
+    --solution-bg: #e8f5e9;
+
+    --highlight: #0066cc;
+    --highlight-bg: #e3f2fd;
+
+    --os: #7b1fa2;
+    --os-bg: #f3e5f5;
+
+    --warning: #f57c00;
+    --warning-bg: #fff3e0;
+
+    /* Table */
+    --th-bg: #f5f5f5;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #1a1a1a;
+        --text: #e0e0e0;
+        --text-muted: #aaa;
+        --text-faint: #888;
+        --border: #444;
+        --border-strong: #555;
+        --link: #6bb3ff;
+
+        --surface: #252525;
+        --surface-alt: #2a2a2a;
+
+        --accent: #6bb3ff;
+        --accent-bg: #1a2a3a;
+
+        --problem: #ff6666;
+        --problem-bg: #3a1a1a;
+
+        --solution: #66cc66;
+        --solution-bg: #1a3a1a;
+
+        --highlight: #6bb3ff;
+        --highlight-bg: #1a2a3a;
+
+        --os: #ce93d8;
+        --os-bg: #2a1a2a;
+
+        --warning: #ffb74d;
+        --warning-bg: #3a2a1a;
+
+        --th-bg: #333;
+    }
+}
+
+/* Base styles */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.intro {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.intro p {
+    margin-bottom: 0.75rem;
+}
+
+.intro .read-first {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--highlight-bg);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.intro .read-first a {
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+/* Section headings */
+h2 {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+}
+
+h2 .anchor {
+    color: var(--text-faint);
+    text-decoration: none;
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.15s;
+    font-weight: normal;
+}
+
+h2:hover .anchor {
+    opacity: 1;
+}
+
+h2 .anchor:hover {
+    color: var(--link);
+}
+
+h2 .amount {
+    float: right;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-muted);
+    margin-top: 0.3rem;
+}
+
+.section-subtitle {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+/* Accordion items */
+details {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+details[open] {
+    padding-bottom: 1.5rem;
+}
+
+summary {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+details[open] summary::after {
+    content: '−';
+}
+
+summary:hover {
+    background: var(--surface-alt);
+}
+
+.summary-title {
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+
+.os-section .summary-title {
+    color: var(--os);
+}
+
+.summary-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: normal;
+    margin-left: 1rem;
+}
+
+/* Content inside accordions */
+.content {
+    padding: 0 1.5rem;
+}
+
+.content h3 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.content h4 {
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.content ul, .content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--border);
+}
+
+th {
+    background: var(--th-bg);
+    font-weight: 600;
+}
+
+/* Content boxes */
+.problem-box {
+    background: var(--problem-bg);
+    border-left: 4px solid var(--problem);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.solution-box {
+    background: var(--solution-bg);
+    border-left: 4px solid var(--solution);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.highlight-box {
+    background: var(--highlight-bg);
+    border-left: 4px solid var(--highlight);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.os-box {
+    background: var(--os-bg);
+    border-left: 4px solid var(--os);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.os-intro {
+    margin-bottom: 1.5rem;
+}
+
+.os-intro p {
+    margin: 0;
+}
+
+.os-intro p + p {
+    margin-top: 0.5rem;
+}
+
+/* Initiative cards */
+.initiative-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.initiative-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.initiative-card h3 a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.initiative-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.initiative-card.os h3 a {
+    color: var(--os);
+}
+
+/* Proposal line */
+.initiative-card .proposal {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--solution-bg);
+    border-left: 3px solid var(--solution);
+    border-radius: 0 4px 4px 0;
+}
+
+/* Note */
+.initiative-card .note {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--surface-alt);
+    border-radius: 4px;
+}
+
+/* Section intro */
+.section-intro {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+/* Steal section */
+.steal-section {
+    background: var(--warning-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2.5rem;
+    border: 2px dashed var(--warning);
+}
+
+.steal-section h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.steal-section ul {
+    margin-left: 1.5rem;
+}
+
+.steal-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Links */
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sign/CTA link */
+.sign-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--accent);
+    border: 1.5px solid var(--accent);
+    border-radius: 4px;
+    color: var(--bg);
+    font-size: 0.95rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-decoration: none;
+    transition: filter 0.15s;
+}
+
+.sign-link:hover {
+    filter: brightness(1.1);
+    text-decoration: none;
+}
+
+.sign-link::after {
+    content: ' →';
+}
+
+/* Sign now section */
+.sign-now {
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.sign-now h2 {
+    margin-top: 0;
+    border-bottom: none;
+    font-size: 1.4rem;
+}
+
+.sign-list {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.sign-list li {
+    margin-bottom: 0.4rem;
+}
+
+.sign-list a {
+    color: var(--accent);
+}
+
+.sign-list a::after {
+    content: ' ↗';
+    font-size: 0.85em;
+}
+
+/* Problem intro section - remove redundant border */
+.problem-intro h2 {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .summary-subtitle {
+        display: none;
+    }
+
+    summary {
+        padding: 0.75rem 1rem;
+    }
+
+    .content {
+        padding: 0 1rem;
+    }
+
+    .problem-box, .solution-box, .highlight-box, .os-box {
+        padding: 0.75rem 1rem;
+    }
+
+    .steal-section {
+        padding: 1.5rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}

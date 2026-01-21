@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lainsäädäntöinfrastruktuuri - Parempi Suomi</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Finlex on epävirallinen ja puutteellinen. Kukaan ei tiedä montako lakia Suomessa on. Ehdotus: lait versionhallittuun tietovarastoon ja formaalit spesifikaatiot.">
+    <meta name="keywords" content="lainsäädäntö, Finlex, versionhallinta, säädösrekisteri, Catala, kansalaisaloite">
+    <link rel="canonical" href="https://parempisuomi.kunnas.com/lainsaadantoinfrastruktuuri">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lainsäädäntöinfrastruktuuri - kansalaisaloite">
+    <meta property="og:description" content="Finlex on epävirallinen. Kukaan ei tiedä montako lakia Suomessa on. Ehdotus: lait versionhallittuun tietovarastoon.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://parempisuomi.kunnas.com/lainsaadantoinfrastruktuuri">
+    <meta property="og:site_name" content="Parempi Suomi">
+    <meta property="og:locale" content="fi_FI">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Lainsäädäntöinfrastruktuuri - kansalaisaloite">
+    <meta name="twitter:description" content="Finlex on epävirallinen. Ehdotus: lait versionhallittuun tietovarastoon.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <p><a href="/">&larr; Takaisin</a></p>
+        <h1>Lainsäädäntöinfrastruktuurin uudistaminen</h1>
+        <p class="subtitle">Lait versionhallittuun tietovarastoon</p>
+    </header>
+
+    <main>
+        <section class="problem-intro">
+            <h2>Ongelma</h2>
+            <p>Suomen lait ovat tekstimuotoisia julistuksia, eivät hallittua dataa. Finlex on epävirallinen, eikä kukaan tiedä tarkalleen montako lakia Suomessa on voimassa. Sääntelyn epäselvyys ja tulkinnanvaraisuus maksavat yrityksille miljardeja euroja vuodessa.</p>
+        </section>
+
+        <section>
+            <h2>Aloitteen sisältö</h2>
+
+            <p>Ehdotamme, että eduskunta edellyttää valtioneuvostoa ryhtymään lainvalmisteluun uuden lain säätämiseksi Suomen virallisesta säädösrekisteristä seuraavien periaatteiden ja säännösluonnosten mukaisesti:</p>
+
+            <h3>1 § Säädösrekisterin perustaminen</h3>
+            <p>Perustetaan Suomen virallinen säädösrekisteri. Rekisteri on lakien, asetusten ja sitovien määräysten ensisijainen ja virallinen lähde. Oikeusministeriö vastaa rekisterin ylläpidosta.</p>
+
+            <h3>2 § Rekisterin sisältö</h3>
+            <p>Rekisteri sisältää kaikki voimassa olevat lait, asetukset ja sitovat viranomaismääräykset. Rekisteristä ei saa jättää pois säädöksiä. Rekisterin sisältö on julkista ja maksutta saatavilla. Rekisteri tarjoaa avoimen rajapinnan koneellista käsittelyä varten.</p>
+
+            <h3>3 § Säädösmuutosten kirjaaminen</h3>
+            <p>Säädösmuutokset tehdään suoraan rekisteriin. Rekisteri tallentaa automaattisesti jokaisen muutoksen: mitä muutettiin, milloin, kenen toimesta ja miksi (viittaukset hallituksen esityksiin ja valiokuntamietintöihin). Rekisteristä on saatavilla jokaisen säädöksen täydellinen muutoshistoria sekä rekisterin tila minä tahansa ajanhetkenä.</p>
+
+            <h3>4 § Vero- ja etuuslakien laskentaspesifikaatiot</h3>
+            <p>Vero- ja etuuslakien, jotka sisältävät laskentasääntöjä, mukana on toimitettava koneluettava laskentaspesifikaatio. Spesifikaation on määriteltävä laskentasäännöt yksiselitteisesti siten, että tietokone voi suorittaa laskennan ilman tulkintaa. Spesifikaatio julkaistaan osana rekisteriä.</p>
+
+            <h3>5 § Spesifikaation ensisijaisuus</h3>
+            <p>Kahden vuoden kuluttua tämän lain voimaantulosta: laeille, joista on laadittu laskentaspesifikaatio, spesifikaatio on lain ensisijainen lähde. Suomenkielinen teksti johdetaan spesifikaatiosta. Ristiriitatilanteessa spesifikaatio on ratkaiseva.</p>
+
+            <h3>6 § Siirtymäsäännökset</h3>
+            <p>Uudet vero- ja etuuslait vaativat laskentaspesifikaation yhden vuoden kuluttua tämän lain voimaantulosta. Voimassa olevan vero- tai etuuslain muuttaminen edellyttää muutettavan osan kirjoittamista spesifikaationa. Olemassa olevat säädökset siirretään rekisteriin kolmen vuoden kuluessa.</p>
+
+            <p><strong>Muutettavat lait:</strong></p>
+            <ul>
+                <li>Laki Suomen säädöskokoelmasta (188/2000)</li>
+                <li>Laki viranomaisten toiminnan julkisuudesta (621/1999)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Perustelut</h2>
+
+            <h3>1. Nykyinen arkkitehtuuri on rikki</h3>
+
+            <p>Suomen lainsäädäntö perustuu semanttiseen muutosmalliin:</p>
+            <ul>
+                <li>Laki julkaistaan julistuksena: "Säädetään seuraavasti..."</li>
+                <li>Muutos julkaistaan julistuksena: "Muutetaan lain X §5 kuulumaan seuraavasti..."</li>
+                <li>Konsolidoitu versio johdetaan jälkikäteen tulkitsemalla julistuksia</li>
+            </ul>
+
+            <p>Tämä on arkkitehtuurisesti rikki, koska muutokset ovat semanttisia, eivät mekaanisia:</p>
+            <ul>
+                <li>"Korvataan sana 'lapsi' sanalla 'henkilö' kaikkialla paitsi 4 §:n 2 momentissa"</li>
+                <li>"Lisätään 5 §:ään uusi kohta, joka viittaa 1985 lain 12 §:ään sellaisena kuin se oli voimassa 1.1.2010"</li>
+            </ul>
+
+            <p>Nykymuotoisia lakeja ei voi konsolidoida luotettavasti - ei tekoälyllä, eikä ihmisillä. Ihminen joutuu tekemään tulkintapäätöksiä: mitä "kaikkialla paitsi" kattaa? Mikä oli lain tila tiettynä päivänä? Ihmiset voivat päästä yksimielisyyteen oikeasta tulkinnasta, mutta prosessi on epädeterministinen: eri ryhmät voivat päätyä eri tuloksiin, eikä ole mekaanista tapaa todentaa kumpi on oikein. Ongelma on arkkitehtuurissa, ei työkaluissa.</p>
+
+            <h3>2. Finlex ei ole virallinen eikä täydellinen</h3>
+
+            <p>Oikeusministeriön arvion mukaan Suomessa on voimassa noin 3 800 lakia ja 9 000 asetusta. Finlexin ajantasainen säädöskanta ei sisällä kaikkia näitä.</p>
+
+            <p>Finlex itse toteaa: tietokantaan otetaan "valikoidusti kansalaisen kannalta tärkeät säädökset". Oikeusministeriö ei vastaa virheistä. Tämä tarkoittaa:</p>
+            <ul>
+                <li>Kansalainen ei voi tietää kaikkia häntä sitovia sääntöjä</li>
+                <li>Lakimies ei voi olla varma löytäneensä kaiken relevantin</li>
+                <li>Kukaan ei tiedä tarkalleen, montako lakia Suomessa on voimassa</li>
+            </ul>
+
+            <p>Vertailun vuoksi: valtio ylläpitää täydellistä rekisteriä siitä, kuka omistaa minkäkin maapalstan (kiinteistörekisteri), mutta ei täydellistä rekisteriä omista säännöistään.</p>
+
+            <h3>3. Ratkaisu: laki on tietovarasto, ei julistus</h3>
+
+            <p>Versionhallinta muuttaa perusarkkitehtuurin. Nykyään lakimuutos on julistus ("muutetaan kuulumaan seuraavasti"), ja ajantasainen tila johdetaan tulkitsemalla julistuksia. Ehdotetussa mallissa lakimuutos on suora muutos tietovarastoon, ja järjestelmä tallentaa automaattisesti mitä muuttui.</p>
+
+            <p>Ajantasainen tila on aina tiedossa - se on tietovaraston nykyinen sisältö, ei tulkinnan tulos. Jokaisen pykälän muutoshistoria on täydellinen: kuka muutti, milloin, miksi. Kysymykseen "mitä laki sanoi 1.1.2020?" saa vastauksen välittömästi - ei tarvitse kaivaa säädöskokoelmasta ja tulkita julistuksia.</p>
+
+            <h3>4. Sääntelyn taloudellinen hinta</h3>
+
+            <p>Elinkeinoelämän keskusliiton (EK) arvion mukaan sääntelyn kustannukset suomalaisille yrityksille ovat 5,6-7,0 miljardia euroa vuodessa - noin 2-2,5 % BKT:sta. Pk-yrityksille sääntelyn kustannukset ovat 2,6-5,2 % liikevaihdosta - kilpailevat 4-6 % keskimääräisten voittomarginaalien kanssa.</p>
+
+            <p>Merkittävä osa näistä kustannuksista syntyy epävarmuudesta: hankkeet jotka kukaan ei aloita, aika joka kuluu tulkintaan tuottavan työn sijaan, päätökset välttää epäselviä alueita. Suuryritykset kestävät tämän paremmin, mutta nekin välttelevät tilanteita joissa kukaan ei tiedä mitä laki sanoo. Yksiselitteiset lait poistaisivat tämän "tulkintaveron" - laki olisi tiedettävissä, ei arvattavissa.</p>
+
+            <h3>5. Tulkinnanvara vastuunpakokeinona</h3>
+
+            <p>Nykyinen järjestelmä käyttää tulkinnanvaraa vastuunpakokeinona: jos teksti on epäselvä, vedotaan tarkoitukseen; jos tarkoitus on epäselvä, vedotaan esitöihin. Kukaan ei ole vastuussa, koska "tulkinta on aina mahdollista".</p>
+
+            <p>Formaali spesifikaatio kääntää asetelman: lainsäätäjän on kirjoitettava mitä tarkoittaa. Jos spesifikaatio on virheellinen, se korjataan - ei tulkita "oikein".</p>
+
+            <h3>6. Robodebt - varoittava esimerkki</h3>
+
+            <p>Australian "Robodebt"-skandaali osoittaa, mitä tapahtuu kun automaatio kohtaa epätäsmällisen lainsäädännön. Yli 400 000 ihmistä sai virheellisen velan perusteella, joka johtui epäselvästä lainsäädännöstä yhdistettynä automaatioon. Järjestelmä todettiin laittomaksi Royal Commissionin tutkinnassa 2023.</p>
+
+            <p>Suomessa Kela ja Verohallinto käyttävät yhä enemmän automatisoituja päätöksiä. Ilman formaaleja spesifikaatioita emme voi tietää, vastaako koodi lakia.</p>
+
+            <h3>7. Kansainvälinen kehitys</h3>
+
+            <p><strong>Viro on osittain ratkaissut ongelman.</strong> Vuodesta 2010 sähköinen <a href="https://www.riigiteataja.ee/en/">Riigi Teataja</a> on ainoa virallinen julkaisu, ja konsolidoidut tekstit ovat oikeudellisesti sitovia. Virossa on silti konsolidointi - muutokset sovitetaan peruslakiin - mutta valtio ottaa vastuun tuloksesta. Tämä osoittaa, että ongelma on poliittinen, ei tekninen.</p>
+
+            <p>Ehdottamamme malli menee pidemmälle: konsolidointia ei ole lainkaan. Lakimuutos on suora muutos tietovarastoon, ei semanttinen ohje joka pitää tulkita jälkikäteen. Laki on tietovaraston tila. Ei tulkintariskiä, koska ei ole mitään tulkittavaa.</p>
+
+            <p>Ranska on pisimmällä formaalien spesifikaatioiden osalta: <a href="https://www.inria.fr/en/catala-software-dgfip-cnaf">Catala-kieli</a> on tuotantokäytössä verovirastossa (DGFIP) ja perhe-etuuslaitoksessa (CNAF). Uusi-Seelanti pilotoi Better Rules -ohjelmaa, joka pyrkii kirjoittamaan lait alusta asti koneluettavina. Singapore kehittää akateemista CCLAW-tutkimushanketta.</p>
+
+            <p>Suomessa ei ole järjestelmällistä hanketta. Olemme jäämässä jälkeen kehityksestä, jonka pitäisi olla luonteva vahvuutemme: digitalisaatio, korkea osaaminen ja pieni hallinto.</p>
+
+            <h3>8. Vasta-argumenttien käsittely</h3>
+
+            <p><strong>"Tämä on liian tekninen"</strong> — Versionhallinta on 50 vuotta vanha teknologia. Jokainen ohjelmistoyritys käyttää sitä. Kysymys ei ole teknologiasta vaan tahdosta.</p>
+
+            <p><strong>"Laki ei ole koodi"</strong> — Lain pitäisi olla koodia niin pitkälle kuin mahdollista. Myös rikosoikeudessa ja perusoikeuksissa suurin osa on determinististä: tunnusmerkistöjen tarkistus, määräaikojen laskenta, prosessisäännöt. Tulkinta tarvitaan vain reunatapauksissa. Hyvä arkkitehtuuri eristää tulkinnan omiin, merkittyihin kohtiin - ei sekoita sitä kaikkialle. Tavoite ei ole poistaa tulkintaa vaan rajata se minimiin ja tehdä näkyväksi missä sitä tarvitaan.</p>
+
+            <p><strong>"Kuka päättää vastaako koodi lakia?"</strong> — Formaalisti spesifioiduille laeille spesifikaatio ON laki. Tuomioistuimet soveltavat spesifikaatiota suoraan, kuten nykyään soveltavat lakitekstiä. Tulkintakuilua ei ole: jos spesifikaatio sanoo X, laki sanoo X. Jos spesifikaatio on virheellinen, eduskunta korjaa sen - ei tuomari.</p>
+
+            <p><strong>"Kustannukset ovat liian suuret"</strong> — Sääntely maksaa yrityksille 5-7 miljardia euroa vuodessa, ja merkittävä osa tästä on tulkintaepävarmuutta. Infrastruktuurin rakentaminen maksaa murto-osan tästä. Lisäksi tämä on perusta tulevaisuuden tehokkuudelle: koneluettavat lait mahdollistavat automaattisen compliance-tarkistuksen, tekoälyavusteisen lainvalmistelun ja reaaliaikaisen vaikutusanalyysin. Maat jotka eivät rakenna tätä infrastruktuuria jäävät jälkeen.</p>
+
+            <h3>Yhteys muihin aloitteisiin</h3>
+
+            <p><a href="valtuuksien-maaraaikaisuus">Valtuuksien määräaikaisuus</a> vaatii ajantasaisen rekisterin, jotta automaattinen raukeaminen toimii. <a href="vaikuttavuusseuranta">Vaikuttavuusseuranta</a> tarvitsee mitattavat tavoitteet, jotka formaalit spesifikaatiot mahdollistavat. <a href="mekanismivirasto">MeV</a> tarvitsee dataa analysoitavaksi - versionhallittu tietovarasto tuottaa sitä automaattisesti. <a href="perustuslakiturva">Perustuslakiturva</a> hyötyy formaaleista spesifikaatioista, jotka mahdollistavat automaattisen ristiriitatarkistuksen.</p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="/">&larr; Takaisin etusivulle</a></p>
+        <p>Parempi Suomi &middot; 2026</p>
+    </footer>
+</body>
+</html>
