@@ -265,6 +265,13 @@ summary:hover {
     margin-bottom: 1rem;
 }
 
+/* Citation/source lines */
+.citation {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
 /* Tables */
 table {
     width: 100%;
