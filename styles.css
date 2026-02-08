@@ -118,18 +118,6 @@ h1 {
     margin-bottom: 0.75rem;
 }
 
-.intro .read-first {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    background: var(--highlight-bg);
-    border-radius: 6px;
-    text-align: center;
-}
-
-.intro .read-first a {
-    color: var(--accent);
-    font-size: 1.1rem;
-}
 
 /* Section headings */
 h2 {
@@ -166,13 +154,6 @@ h2 .amount {
     margin-top: 0.3rem;
 }
 
-.section-subtitle {
-    display: block;
-    font-size: 1rem;
-    font-weight: normal;
-    color: var(--text-muted);
-    margin-top: 0.25rem;
-}
 
 /* Accordion items */
 details {
@@ -215,54 +196,12 @@ summary:hover {
     background: var(--surface-alt);
 }
 
-.summary-title {
-    font-size: 1.2rem;
-    color: var(--accent);
-}
 
-.os-section .summary-title {
-    color: var(--os);
-}
-
-.summary-subtitle {
-    font-size: 0.9rem;
+/* Citation/source lines */
+.citation {
+    font-size: 0.85rem;
     color: var(--text-muted);
-    font-weight: normal;
-    margin-left: 1rem;
-}
-
-/* Content inside accordions */
-.content {
-    padding: 0 1.5rem;
-}
-
-.content h3 {
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.content h4 {
-    font-size: 0.95rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-}
-
-.content ul, .content ol {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.content li {
-    margin-bottom: 0.5rem;
-}
-
-.content p {
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 /* Tables */
@@ -293,13 +232,6 @@ th {
     border-radius: 0 4px 4px 0;
 }
 
-.solution-box {
-    background: var(--solution-bg);
-    border-left: 4px solid var(--solution);
-    padding: 1rem 1.5rem;
-    margin: 1rem 0;
-    border-radius: 0 4px 4px 0;
-}
 
 .highlight-box {
     background: var(--highlight-bg);
@@ -309,25 +241,6 @@ th {
     border-radius: 0 4px 4px 0;
 }
 
-.os-box {
-    background: var(--os-bg);
-    border-left: 4px solid var(--os);
-    padding: 1rem 1.5rem;
-    margin: 1rem 0;
-    border-radius: 0 4px 4px 0;
-}
-
-.os-intro {
-    margin-bottom: 1.5rem;
-}
-
-.os-intro p {
-    margin: 0;
-}
-
-.os-intro p + p {
-    margin-top: 0.5rem;
-}
 
 /* Initiative cards */
 .initiative-card {
@@ -502,6 +415,52 @@ a:hover {
     margin-bottom: 0.5rem;
 }
 
+/* Book tease / mailing list */
+.book-tease {
+    background: var(--surface-alt);
+    border-left: 4px solid var(--os);
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.book-cover-link {
+    flex-shrink: 0;
+    line-height: 0;
+}
+
+.book-cover {
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: block;
+}
+
+.book-tease > div {
+    min-width: 0;
+    flex: 1;
+}
+
+.book-tease h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    border-bottom: none;
+    font-size: 1.4rem;
+    color: var(--os);
+}
+
+.book-tease p {
+    margin-bottom: 0.75rem;
+}
+
+.book-hook {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     body {
@@ -522,19 +481,11 @@ a:hover {
         font-size: 1.1rem;
     }
 
-    .summary-subtitle {
-        display: none;
-    }
-
     summary {
         padding: 0.75rem 1rem;
     }
 
-    .content {
-        padding: 0 1rem;
-    }
-
-    .problem-box, .solution-box, .highlight-box, .os-box {
+    .problem-box, .highlight-box {
         padding: 0.75rem 1rem;
     }
 
@@ -548,5 +499,11 @@ a:hover {
 
     th, td {
         padding: 0.5rem;
+    }
+
+    .book-tease {
+        padding: 1.25rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
     }
 }
