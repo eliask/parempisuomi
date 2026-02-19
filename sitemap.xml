@@ -29,10 +29,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://parempisuomi.kunnas.com/mekanismivirasto</loc>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://parempisuomi.kunnas.com/lainsaadantoinfrastruktuuri</loc>
     <priority>0.8</priority>
   </url>
@@ -62,14 +58,6 @@
   </url>
   <url>
     <loc>https://parempisuomi.kunnas.com/hankinnat</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://parempisuomi.kunnas.com/mev-analyysi</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://parempisuomi.kunnas.com/mechanism-authority</loc>
     <priority>0.7</priority>
   </url>
   <url>
